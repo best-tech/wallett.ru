@@ -1,1 +1,1 @@
-Sitemap: //wallett.ru//sitemap.xml
+Sitemap: https://wallett.ru//sitemap.xml
