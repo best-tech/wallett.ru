@@ -136,7 +136,7 @@
       <div class="row">
          <div class="col-sm-12 col-md-8">
             <div class="blog-item">
-               <div class="details-img"><img alt="Officia vel nihil possimus deserunt" src="/assets/images/blog-image/blog-4.jpg"></div>
+               <!--<div class="details-img"><img alt="Officia vel nihil possimus deserunt" src="/assets/images/blog-image/blog-4.jpg"></div>-->
                <div class="blog-details">
                   <h3 class="blog-title">Officia vel nihil possimus deserunt</h3>
                    <p>vitae veritatis quas asperiores Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat officiis quos ipsa, recusandae expedita porro autem, voluptatem ullam itaque quas cupiditate omnis molestiae suscipit? Maiores voluptate nemo laborum magni pariatur mollitia.</p>
@@ -180,7 +180,7 @@
                <div class="blog-navigation">
                   
                   <div class="previous-blog-post">
-                     <a href="/education/2017/12/21/second-post.html"><i class="fa fa-angle-left"></i>Previous Article</a>
+                     <a href="/education/2017/12/21/second-post.html"><i class="fa fa-angle-left"></i> Предыдущая </a>
                      <a href="/education/2017/12/21/second-post.html"><p class="hover-color">Second Post Title With Lorem</p></a>
                   </div>
                   
@@ -189,17 +189,18 @@
                <div class="clearfix"></div>
                <div id="comments">
                   
-                 <div id="disqus_thread"></div>
-<script>
+                 <!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 
-(function() { 
-var d = document, s = d.createElement('script');
-s.src = 'https://themeix-com-5.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+<script type="text/javascript">
+  VK.init({apiId: 6861845, onlyWidgets: true});
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> 
+
+<!-- Put this div tag to the place, where the Comments block will be -->
+<div id="vk_comments"></div>
+<script type="text/javascript">
+VK.Widgets.Comments("vk_comments", {limit: 20, attach: "*"});
+</script> 
                      
                </div>
             </div>
@@ -207,7 +208,7 @@ s.setAttribute('data-timestamp', +new Date());
          <div class="col-md-3 col-sm-12 col-md-offset-1">
             <div class="sidebar">
                <div class="widget">
-                  <h3 class="widget-title">Topics Category</h3>
+                  <h3 class="widget-title">Категории</h3>
                   <ul>
                      <li class="cat-item">
                        <a href="/tag/design.html" class="set-5">Design</a> <a href="/tag/jekyll.html" class="set-5">Jekyll</a> <a href="/tag/newspaper.html" class="set-5">Newspaper</a> <a href="/tag/science.html" class="set-1">Science</a> <a href="/tag/seience.html" class="set-1">Seience</a> <a href="/tag/technology.html" class="set-5">Technology</a>
@@ -215,7 +216,7 @@ s.setAttribute('data-timestamp', +new Date());
                   </ul>
                </div>
                <div class="widget custom">
-                  <h3 class="widget-title">Popular Recent Posts</h3>
+                  <h3 class="widget-title">Популярные</h3>
                   <ul>
                     
                      <li>
